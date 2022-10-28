@@ -1,0 +1,52 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $primary-text-color;
+  background-color: $primary-background-color;
+  min-width: 320px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+// Add this class to remove underlining from links
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.container {
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 0 20px;
+  @include tablet {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  @include desktop {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
+}

@@ -1,2 +1,13 @@
 @import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/global-styles';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customers-say';
+@import './layout/subscribe';
+@import './layout/footer';
+@import './layout/mobile-menu';
+@import './layout/modal';
