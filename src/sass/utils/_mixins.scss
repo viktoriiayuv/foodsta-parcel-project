@@ -1,7 +1,6 @@
-@mixin fontSize($font-size, $line-height, $letter-spacing) {
+@mixin fontSize($font-size, $line-height) {
   font-size: $font-size;
   line-height: $line-height;
-  letter-spacing: $letter-spacing;
 }
 
 @mixin centeredFlex($type: flex) {
