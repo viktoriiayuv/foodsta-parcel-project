@@ -43,6 +43,12 @@
     color: $primary-text-color;
 }
 
+.nav-site__link:hover,
+.nav-site__link:focus {
+    color: #bbf330; 
+    text-decoration-line: underline;
+}
+
 .button {
     margin-left: 30px;
 }
