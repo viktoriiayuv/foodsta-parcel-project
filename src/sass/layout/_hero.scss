@@ -1,18 +1,21 @@
-.hero{
+.hero {
+  &__title {
+    @include fontSize(28px, 1.2);
+    max-width: 502px;
+  }
+  &__text {
+    @include fontSize(14px, 1.5);
+    max-width: 502px;
+  }
+  &__btn {
+    @include fontSize(13px, 1.5);
+    width: 98px;
+    height: 32px;
+    border-radius: 30px;
+    background-color: $primary-green-accent;
+    border: none;
+  }
 
-    
-    &_title{
-        @include fontSize(28px, 33px);
-    }
-    &_text{
-        @include fontSize(14px, 150%);
-    }
-    &_btn{
-        @include fontSize(13px, 150%);
-        width: 98px;
-        height: 32px;
-        border-radius: 30px;
-        background-color: $primary-green-accent;
-        border: none;
-    }
+  background-color: $primary-yellow-accent;
+
 }
