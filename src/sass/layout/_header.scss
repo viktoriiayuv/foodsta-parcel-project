@@ -1,22 +1,15 @@
-// @include desktop {
-//     .container {
-//         min-width: 1280px;
-//         padding: 0 16px;
-//     }
+// .header {
+//     background: #FEFEFE;
+//     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 // }
 
-.header {
-    background: #FEFEFE;
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-}
+// .header__nav {
+//     display: flex;
+// }
 
-.header__nav {
-    display: flex;
-}
-
-.header__info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: auto;
-}
+// .header__info {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     margin-left: auto;
+// }
