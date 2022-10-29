@@ -17,5 +17,11 @@
   }
 
   background-color: $primary-yellow-accent;
+ 
+}
 
+.slider {
+  @media screen and (max-width: 768px){
+    display: none;
+  }
 }
