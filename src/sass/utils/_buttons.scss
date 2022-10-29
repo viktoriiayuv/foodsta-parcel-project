@@ -1,0 +1,58 @@
+.button {
+  @include centeredFlex(inline-flex);
+  @include fontSize(13px, 1.5);
+  font-weight: 500;
+  color: $primary-text-color;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button--order-green {
+  background-color: $primary-green-accent;
+  border: none;
+  width: 98px;
+  height: 32px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-hover-color;
+  }
+}
+
+.button--order-white {
+  background-color: $white-color;
+  border: 2px solid $secondary-green-accent;
+  width: 106px;
+  height: 40px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $dark-green-color;
+  }
+}
+.button--subscribe-green {
+  background-color: $primary-green-accent;
+  border: none;
+  width: 103px;
+  height: 42px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-hover-color;
+  }
+}
+.button--subscribe-white {
+  background: $white-color;
+  border: 1px solid $secondary-green-accent;
+  width: 103px;
+  height: 42px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary-yellow-accent;
+  }
+}
