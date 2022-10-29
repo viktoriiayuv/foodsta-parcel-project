@@ -1,0 +1,80 @@
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    fill: #7eb101;
+  }
+}
+
+@include tablet {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover {
+  fill: #ffe550;
+}
+
+.close-btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  fill: #2c2c2c;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn__icon {
+  box-shadow: inset 2px 1px 4px rgba(61, 61, 61, 0.1);
+}
+
+.menu-container {
+  width: 130px;
+  height: 255px;
+  z-index: 999;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #fefefe;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+
+  border-radius: 30px 0 30px 30px;
+
+  transform: translateX(200%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-mob__list {
+  @include fontSize(16px, 1.19);
+}
+
+.menu-mob__item {
+  width: 130px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.menu-mob__link {
+  color: #2c2c2c;
+}
+
+.menu-mob__link:hover {
+  background-color: #bbf330;
+}
