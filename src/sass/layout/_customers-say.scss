@@ -1,0 +1,49 @@
+.customers {
+    padding: 60px 0;
+
+    background-image: url(../images/mobile/customers/bg320x769.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+
+    @include retina {
+        background-image: url(../images/mobile/customers/bg640x1538@2x.png);
+    }
+
+    @include mobile {
+        background-image: url(../images/mobile/customers/bg480x769.png);
+        
+        @include retina {
+            background-image: url(../images/mobile/customers/bg960x1538@2x.png);
+        }
+    }
+    
+    @include tablet {
+        background-image: url(../images/tablet/customers/bg768x544.png);
+        padding-bottom: 120px;
+
+        @include retina {
+            background-image: url(../images/tablet/customers/bg1536x1108@2x.png);
+        }
+    }
+
+    @include desktop {
+        background-image: url(../images/desktop/customers/bg1280x647.png);
+        padding: 100px 0 200px 0;
+
+        @include retina {
+            background-image: url(../images/desktop/customers/bg2560x1294@2x.png);
+        }
+    }
+}
+
+.customers__title {    
+    @include fontSize(28px, 1.18);
+    font-weight: 700;
+        
+    margin-bottom: 20px;
+
+    @include tablet {
+        @include fontSize(42px, 1.17);        
+    }
+}
