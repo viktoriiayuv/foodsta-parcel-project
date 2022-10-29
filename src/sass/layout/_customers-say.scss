@@ -47,3 +47,53 @@
         @include fontSize(42px, 1.17);        
     }
 }
+
+.customers__description {
+    @include fontSize(14px, 1.14);
+        font-weight: 400;
+    
+    margin-bottom: 32px;
+
+    @include tablet {
+        @include fontSize(16px, 1.19);
+    }
+}
+
+.customers__list {
+    margin: 0 auto;
+    
+    @include tablet {
+        @include centeredFlex();
+        align-items: baseline;
+    }
+
+    @include desktop {
+        padding-right: 107px;
+    }    
+}
+
+.customers__item {
+    border-radius: 26px;
+    border-top-left-radius: 0;
+    margin-bottom: 24px;
+    padding: 8px;
+    background-color: $secondary-background-color;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include tablet {
+        &:nth-child(2n) {
+            margin-left: 32px;
+        }
+
+        padding: 12px;
+    }
+
+    @include desktop {
+        &:nth-child(2n) {
+            margin-left: 139px;
+        }        
+    }
+}
