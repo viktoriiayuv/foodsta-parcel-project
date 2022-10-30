@@ -22,7 +22,7 @@ button {
   }
 }
 
-.menu-toggle:hover {
+.menu-toggle:active {
   fill: $primary-yellow-accent;
 }
 
@@ -81,6 +81,6 @@ button {
   color: $primary-text-color;
 }
 
-.menu-mob__item:hover {
+.menu-mob__item:active {
   background-color: $primary-green-accent;
 }
