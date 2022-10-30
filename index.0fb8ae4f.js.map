@@ -1,0 +1,1 @@
+{"mappings":"AAOEA,EAAE,gBAAgBC","sources":["src/js/slider.js"],"sourcesContent":["\n// $('.slider__img').slick({\n//     infinite: true,\n//     slidesToShow: 1,\n//     slidesToScroll: 1\n//   });\n\n  $('.slider__img').slick();"],"names":["$","slick"],"version":3,"file":"index.0fb8ae4f.js.map"}
