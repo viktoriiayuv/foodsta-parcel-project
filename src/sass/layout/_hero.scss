@@ -10,14 +10,6 @@
     max-width: 502px;
     padding-bottom: 28px;
   }
-  &__btn {
-    @include fontSize(13px, 1.5);
-    width: 98px;
-    height: 32px;
-    border-radius: 30px;
-    background-color: $primary-green-accent;
-    border: none;
-  }
   & .container {
     display: flex;
     flex-direction: row;
