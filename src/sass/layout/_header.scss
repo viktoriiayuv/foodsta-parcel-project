@@ -1,64 +1,74 @@
 .header {
-    background: #FEFEFE;
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-    height: 72px;
+  background: $secondary-background-color;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  height: 72px;
 }
 
 .logo {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .nav-site {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-site__item:not(:first-child) {
-    margin-left: 28px;
+  margin-left: 28px;
 }
 
 .nav-site__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .nav-site__list {
-        display: none;
-    }
+  .nav-site__list {
+    display: none;
+  }
 
-    .button {
-        display: none;
-    }
+  .header__button {
+    display: none;
+  }
 }
 
 .nav-site__link {
-    text-decoration: none;
-    padding: 28px 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    color: $primary-text-color;
+  text-decoration: none;
+  padding: 28px 0;
+  @include fontSize(14px, 1.14);
+  color: $primary-text-color;
 }
 
 .nav-site__link:hover,
-.nav-site__link:focus {
-    color: #bbf330; 
-    text-decoration-line: underline;
+.nav-site__link:focus,
+.nav-site__link:active {
+  color: $primary-green-accent;
+  text-decoration-line: underline;
 }
 
-.button {
-    margin-left: 30px;
+.header__button {
+  margin-left: 30px;
 }
 
 .open-menu {
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-    padding: 20px 2px;
-    margin-left: auto;
-    border: none;
-    background: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  cursor: pointer;
+  padding: 20px 0;
+  margin-left: auto;
+  border: none;
+  background: none;
+  color: $secondary-green-accent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-yellow-accent;
+  }
+}
+
+.open-menu__icon {
+  fill: currentColor;
 }
