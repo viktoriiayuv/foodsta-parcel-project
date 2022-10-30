@@ -1,0 +1,228 @@
+@media screen and (max-width: 320px) {
+  .offerings__section {
+    padding-top: 41px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 320px;
+    height: 1050px;
+    background-image: url(/src/images/mobile/offerings/bg320x1050.png);
+    background-size: 320px 1050px;
+  }
+
+  @include retina {
+    .offerings__section {
+      background-image: url(/src/images/mobile/offerings/bg640x2100@2x.png);
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .offerings__section {
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px;
+    height: 1050px;
+    background-position: center;
+    background-image: url(/src/images/mobile/offerings/bg480x1050.png);
+    background-size: 480px 1050px;
+  }
+
+ @include retina {
+    .offerings__section {
+      background-image: url(/src/images/mobile/offerings/bg960x2100@2x.png);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .offerings__section {
+    padding-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 768px;
+    height: 1140px;
+    background-position: center;
+    background-image: url(/src/images/tablet/offerings/bg768x1140.png);
+    background-size: 768px 1140px;
+  }
+
+  @include retina {
+    .offerings__section {
+      background-image: url(/src/images/tablet/offerings/bg1536x2280@2x.png);
+    }
+  }
+}
+
+@include desktop {
+  .offerings__section {
+    padding-top: 177px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+    height: 824px;
+    background-position: center;
+    background-image: url(/src/images/desktop/offerings/bg1280x824.png);
+    background-size: 1280px 824px;
+  }
+
+  @include retina {
+    .offerings__section {
+      background-image: url(/src/images/desktop/offerings/bg2560x1648@2x.png);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offerings__img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include tablet {
+  .offerings__img {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+@include desktop {
+  .offerings__img {
+    margin-right: 90px;
+  }
+}
+
+.section__title {
+  margin-top: 60px;
+  max-width: 526px;
+  font-size: 28px;
+  line-height: 1.18;
+}
+@include tablet {
+  .section__title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+.section__text {
+  margin-top: 28px;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+@include tablet {
+  .section__text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.offerings__icon {
+  margin-top: 28px;
+}
+
+@include tablet {
+  .offerings__icon {
+    margin-top: 40px;
+  }
+}
+
+.offerings__title {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.offerings__text {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.offerings-btn__list {
+  margin-top: 28px;
+  display: flex;
+  align-items: baseline;
+}
+
+@include tablet {
+  .offerings-btn__list {
+    margin-top: 40px;
+  }
+}
+
+.offerings-btn__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.offerings__button {
+  min-width: 106px;
+  height: 40px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  cursor: pointer;
+  color: $primary-text-color;
+  background: #ffffff;
+  border: 2px solid $secondary-green-accent;
+  border-radius: 30px;
+}
+
+.offerings__button:hover,
+.offerings__button:focus {
+  border-color: $dark-green-color;
+}
+
+.offerings__button--form {
+  position: relative;
+  padding: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #000000;
+  border: none;
+  background-color: inherit;
+}
+
+.button__icon {
+  position: absolute;
+  transform: translate(3px, 2px);
+}
+
+@include tablet {
+  .offerings__list {
+    display: flex;
+  }
+  .offerings__item {
+    max-width: 252px;
+  }
+
+  .offerings__item:not(:last-child) {
+    margin-right: 116px;
+  }
+}
+
+@include desktop {
+  .offerings__item:not(:last-child) {
+    margin-right: 67px;
+  }
+}
+
+@include desktop {
+  .offerings__container {
+    display: flex;
+    align-items: center;
+  }
+  .offerings__wrap {
+    max-width: 573px;
+  }
+
+  .offerings__button--form {
+    display: none;
+  }
+}
