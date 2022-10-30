@@ -24,6 +24,10 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  .draggable {
+    border-radius: 50%;
+  }
 }
 
 .slider {
@@ -51,6 +55,7 @@
 
     .slider {
       // margin-top: auto;
+
       position: absolute;
       right: 0;
       bottom: 0;
