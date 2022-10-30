@@ -1,32 +1,8 @@
-button {
+.close-btn {
   border: none;
   background: none;
   padding: 0;
   margin: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-toggle {
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    top: 22px;
-    right: 20px;
-    fill: $secondary-green-accent;
-  }
-}
-
-@include tablet {
-  .menu-toggle {
-    display: none;
-  }
-}
-
-.menu-toggle:active {
-  fill: $primary-yellow-accent;
-}
-
-.close-btn {
   width: 24px;
   height: 24px;
   position: absolute;
@@ -41,7 +17,7 @@ button {
 }
 
 .menu-container {
-  width: 130px;
+  width: 145px;
   height: 255px;
   z-index: 999;
   position: absolute;
@@ -81,6 +57,8 @@ button {
   color: $primary-text-color;
 }
 
+.menu-mob__item:hover,
+.menu-mob__item:focus,
 .menu-mob__item:active {
   background-color: $primary-green-accent;
 }
