@@ -1,6 +1,5 @@
 .footer {
   padding: 60px 0;
-  // height: 619px;
   background-image: url('../images/mobile/footer/footer320x619.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,29 +10,47 @@
   }
 }
 
+.logo--footer {
+  padding: 0;
+}
+
 .footer__nav-site {
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: start;
+  }
+
+  @include tablet {
+    margin-bottom: 57px;
+  }
+
+  @include desktop {
+    margin-bottom: 80px;
+  }
 }
 
-.nav-site__list {
-  margin-right: 40px;
+.nav-site__list--footer {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: start;
+    margin-right: 81px;
+  }
 }
 
-.nav-site__item {
-  margin-bottom: 20px;
+.nav-site__item.nav-site__item--footer {
+  @media screen and (max-width: 767px) {
+    margin: 0 0 20px 0;
+  }
 }
-
-.nav-site__link {
-  color: $primary-text-color;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+.nav-site__link--footer {
+  padding: 0;
+  margin: 0;
 }
 
 .subs-box__title {
-  font-size: 14px;
+  @include fontSize(14px, 1.5);
   font-weight: 500;
-  line-height: calc(21 / 14);
   margin-bottom: 12px;
 }
 
@@ -42,40 +59,19 @@
   flex-direction: column;
 }
 
-.subscribe-form__input {
-  padding: 12px;
-  height: 42px;
-  border: 0.854167px solid $primary-yellow-accent;
-  border-radius: 30px;
-  background-color: $white-color;
-  border: 0.854167px solid $primary-yellow-accent;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(18 / 12);
-  color: $placeholder-color;
-
-  //   &:valid {
-  //     border-color: $secondary-green-accent;
-  //   }
-  //   &:invalid {
-  //     border-color: $error-color;
-  //   }
+.subscribe-form__input--footer {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
-
 .subscribe-form__box {
   display: flex;
   justify-content: end;
 }
 
-.subscribe-form__btn {
-  margin-top: 32px;
-}
-
 .subs-box__text {
   margin-top: 20px;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: calc(12 / 10);
+  @include fontSize(10px, 1.2);
 }
 
 .subs-box__link {
@@ -89,9 +85,7 @@
 }
 
 .additional-nav__link {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: calc(12 / 10);
+  @include fontSize(10px, 1.2);
   color: $secondary-green-accent;
 }
 
@@ -99,7 +93,5 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: calc(12 / 10);
+  @include fontSize(10px, 1.2);
 }

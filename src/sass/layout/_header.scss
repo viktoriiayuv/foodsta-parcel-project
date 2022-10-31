@@ -12,7 +12,7 @@
 
 .logo:hover,
 .logo:focus {
-    transform: rotate(25deg);
+  transform: rotate(25deg);
 }
 
 .nav-site {
@@ -34,6 +34,11 @@
 .nav-site__item:active {
   color: $primary-green-accent;
   text-decoration-line: underline;
+}
+
+.nav-site__item--header:hover,
+.nav-site__item--header:focus,
+.nav-site__item--header:active {
   transform: scale(1.35);
 }
 
@@ -44,7 +49,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .nav-site__list {
+  .nav-site__list--header {
     display: none;
   }
 
