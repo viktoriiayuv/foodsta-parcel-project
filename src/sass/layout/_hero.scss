@@ -1,0 +1,89 @@
+.hero {
+  padding-top: 60px;
+  &__title {
+    @include fontSize(28px, 1.2);
+    max-width: 502px;
+    padding-bottom: 28px;
+  }
+  &__text {
+    @include fontSize(14px, 1.5);
+    max-width: 502px;
+    padding-bottom: 28px;
+  }
+  & .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .draggable {
+    border-radius: 50%;
+  }
+}
+
+.slider {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero {
+    & .container {
+      position: relative;
+      height: 409px;
+    }
+
+    &__title {
+      @include fontSize(42px, 1.2);
+      max-width: 537px;
+      padding-bottom: 44px;
+    }
+    &__text {
+      width: 336px;
+      padding-bottom: 40px;
+    }
+
+    .slider {
+      // margin-top: auto;
+
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 320px;
+      &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 292px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .hero {
+    padding-top: 14px;
+    &__title {
+      @include fontSize(48px, 1.2);
+    }
+    &__text {
+      padding-bottom: 40px;
+    }
+
+    .slider {
+      position: relative;
+      &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 528px;
+      }
+    }
+  }
+}
