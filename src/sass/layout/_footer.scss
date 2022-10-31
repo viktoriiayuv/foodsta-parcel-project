@@ -1,19 +1,17 @@
-.footer__container {
-  padding: 60px 20px;
-  height: 619px;
+.footer {
+  padding: 60px 0;
+  // height: 619px;
   background-image: url('../images/mobile/footer/footer320x619.png');
   background-size: cover;
-}
+  background-repeat: no-repeat;
+  background-position: center;
 
-@include retina {
-  .footer__container {
+  @include retina {
     background-image: url('../images/mobile/footer/footer640x1238@2x.png');
   }
 }
 
-.nav-site {
-  display: flex;
-  justify-content: space-between;
+.footer__nav-site {
   margin-bottom: 20px;
 }
 
