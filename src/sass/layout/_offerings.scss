@@ -1,0 +1,182 @@
+.offerings {
+  padding-top: 41px;
+  padding-bottom: 63px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url('../images/mobile/offerings/bg320x1050.png');
+
+  @include retina {
+    background-image: url('../images/mobile/offerings/bg640x2100@2x.png');
+  }
+
+  @include mobile {
+    padding-top: 50px;
+    background-image: url('../images/mobile/offerings/bg480x1050.png');
+
+    @include retina {
+      background-image: url('../images/mobile/offerings/bg960x2100@2x.png');
+    }
+  }
+
+  @include tablet {
+    padding-top: 150px;
+    padding-bottom: 103px;
+    background-image: url('../images/tablet/offerings/bg768x1140.png');
+
+    @include retina {
+      background-image: url('../images/tablet/offerings/bg1536x2280@2x.png');
+    }
+  }
+
+  @include desktop {
+    padding-top: 177px;
+    padding-bottom: 43px;
+    background-image: url('../images/desktop/offerings/bg1280x824.png');
+
+    @include retina {
+      background-image: url('../images/desktop/offerings/bg2560x1648@2x.png');
+    }
+  }
+}
+
+.offerings__container {
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.offerings__img {
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    margin-left: 0;
+  }
+
+  @include desktop {
+    margin-right: 90px;
+  }
+}
+
+.offerings__wrap {
+  @include desktop {
+    max-width: 573px;
+  }
+}
+
+.offerings__header {
+  margin-top: 60px;
+  @include fontSize(28px, 1.18);
+
+  @include tablet {
+    max-width: 526px;
+    @include fontSize(42px, 1.17);
+  }
+
+  @include desktop {
+    @include fontSize(42px, 1.2);
+  }
+}
+
+.offerings__description {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  @include fontSize(14px, 1.14);
+
+  @include tablet {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    @include fontSize(16px, 1.19);
+  }
+
+  @include desktop {
+    @include fontSize(16px, 1.5);
+  }
+}
+
+.offerings__list {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.offerings__item {
+  @include tablet {
+    max-width: 252px;
+  }
+
+  @include tablet {
+    max-width: 253px;
+  }
+}
+
+.offerings__item:first-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 28px;
+  }
+}
+
+.offerings__item:not(:last-child) {
+  @include tablet {
+    margin-right: 116px;
+  }
+  @include desktop {
+    margin-right: 67px;
+  }
+}
+
+.offerings__title {
+  margin-top: 8px;
+  @include fontSize(18px, 1.17);
+  @include desktop {
+    @include fontSize(18px, 1.5);
+  }
+}
+
+.offerings__text {
+  margin-top: 16px;
+  @include fontSize(14px, 1.14);
+  @include desktop {
+    @include fontSize(14px, 1.5);
+  }
+}
+
+.btn-list {
+  margin-top: 28px;
+  display: flex;
+  align-items: baseline;
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    margin-top: 32px;
+  }
+}
+
+.btn-list__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.btn-list__button {
+  position: relative;
+  padding: 0;
+  @include fontSize(13px, 1.5);
+  cursor: pointer;
+  color: #000000;
+  border: none;
+  background-color: inherit;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.btn-list__icon {
+  position: absolute;
+  transform: translate(3px, 2px);
+}
