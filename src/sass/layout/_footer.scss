@@ -150,6 +150,9 @@
 
 .copyright {
   margin-top: 40px;
+  @include mobile {
+    text-align: center;
+  }
   @include fontSize(10px, 1.2);
   @include tablet {
     margin-top: 0;
