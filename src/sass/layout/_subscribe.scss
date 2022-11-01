@@ -3,6 +3,31 @@
   @include tablet {
     padding-bottom: 100px;
   }
+  @include desktop {
+    padding-bottom: 64px;
+  }
+
+  &__container {
+    @include desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+  }
+
+  &__img {
+    @media screen and (max-width: 767px) {
+        margin: 0 auto 17px auto;
+      }
+    
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin: 0 0 20 auto;
+    }
+
+    @include desktop {
+      max-width: none;
+    }
+  }
 
   &__title {
     @include fontSize(28px, 1.2);
