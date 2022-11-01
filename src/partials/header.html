@@ -1,13 +1,27 @@
 <header class="header">
   <div class="container">
     <nav class="nav-site">
-      <a href="./index.html" class="logo"><img src="./images/logo/logo69x51.png" /></a>
-      <ul class="nav-site__list">
-        <li class="nav-site__item"><a href="#" id="#" class="nav-site__link">Home</a></li>
-        <li class="nav-site__item"><a href="#" id="#" class="nav-site__link">Offerings</a></li>
-        <li class="nav-site__item"><a href="#" id="#" class="nav-site__link">Favorites</a></li>
-        <li class="nav-site__item"><a href="#" id="#" class="nav-site__link">Customers Say</a></li>
-        <li class="nav-site__item"><a href="#" id="#" class="nav-site__link">Subscribe</a></li>
+      <a href="./index.html" class="logo">
+        <picture>
+          <source
+            srcset="./images/logo/logo69x51.png x1, ./images/logo/logo69x51@2x.png x2"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="./images/logo/logo762x600.png x1, ./images/logo/logo1524x1200@2x.png x2"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/logo/logo69x51.png" />
+        </picture>
+      </a>
+      <ul class="nav-site__list nav-site__list--header">
+        <li class="nav-site__item nav-site__item--header"><a href="#" id="#" class="nav-site__link">Home</a></li>
+        <li class="nav-site__item nav-site__item--header"><a href="#" id="#" class="nav-site__link">Offerings</a></li>
+        <li class="nav-site__item nav-site__item--header"><a href="#" id="#" class="nav-site__link">Favorites</a></li>
+        <li class="nav-site__item nav-site__item--header">
+          <a href="#" id="#" class="nav-site__link">Customers Say</a>
+        </li>
+        <li class="nav-site__item nav-site__item--header"><a href="#" id="#" class="nav-site__link">Subscribe</a></li>
       </ul>
       <button type="button" class="button button--order-green header__button">Order Now</button>
       <button type="button" class="open-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
