@@ -2,7 +2,19 @@
   <div class="container">
     <div class="footer__item">
       <div class="nav-site footer__nav-site">
-        <a href="./index.html" class="logo logo--footer"><img src="./images/logo/logo69x51.png" /></a>
+        <a href="./index.html" class="logo logo--footer">
+          <picture>
+            <source
+              srcset="./images/logo/logo69x51.png x1, ./images/logo/logo69x51@2x.png x2"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./images/logo/logo762x600.png x1, ./images/logo/logo1524x1200@2x.png x2"
+              media="(min-width: 768px)"
+            />
+            <img src="./images/logo/logo69x51.png" />
+          </picture>
+        </a>
         <ul class="nav-site__list nav-site__list--footer">
           <li class="nav-site__item nav-site__item--footer">
             <a href="./index.html" class="nav-site__link nav-site__link--footer link">Home</a>
