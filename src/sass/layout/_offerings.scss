@@ -21,6 +21,7 @@
   }
 
   @include tablet {
+    margin-top: -109px;
     padding-top: 150px;
     padding-bottom: 103px;
     background-image: url('../images/tablet/offerings/bg768x1140.png');
@@ -31,6 +32,7 @@
   }
 
   @include desktop {
+    margin-top: -148px;
     padding-top: 177px;
     padding-bottom: 43px;
     background-image: url('../images/desktop/offerings/bg1280x824.png');
