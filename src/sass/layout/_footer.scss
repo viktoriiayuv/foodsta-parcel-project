@@ -150,7 +150,7 @@
 
 .copyright {
   margin-top: 40px;
-  @include mobile {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
   @include fontSize(10px, 1.2);
