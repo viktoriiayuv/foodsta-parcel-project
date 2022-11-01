@@ -1,25 +1,28 @@
 .subscribe {
   padding-bottom: 60px;
+  margin-top: -43px;
   @include tablet {
     padding-bottom: 100px;
+    margin-top: -74px;
   }
   @include desktop {
     padding-bottom: 64px;
+    margin-top: -71px;
   }
 
   &__container {
     @include desktop {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-      }
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
   }
 
   &__img {
     @media screen and (max-width: 767px) {
-        margin: 0 auto 17px auto;
-      }
-    
+      margin: 0 auto 17px auto;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       margin: 0 0 20 auto;
     }
@@ -49,7 +52,7 @@
 
 .subscribe-form {
   @media screen and (max-width: 767px) {
-    text-align: right;
+    align-items: flex-end;
   }
 }
 
@@ -95,30 +98,3 @@
     }
   }
 }
-
-// .subscribe-form__button {
-//     display: inline-flex;
-//     align-items: center;
-//     justify-content: center;
-//     background: $primary-green-accent;
-//     border: none;
-//     border-radius: 30px;
-//     width: 103px;
-//     height: 42px;
-//     cursor: pointer;
-//     font-weight: 500;
-//     @include fontSize (13px, 1.5);
-// }
-
-// @media screen and (max-width: 1279px) {
-//     .subscribe-form__button:active {
-//         background: $button-hover-color;
-//     }
-// }
-
-// @media screen and (min-width: 1280px) {
-//     .subscribe-form__button:hover,
-//     .subscribe-form__button:focus {
-//         background: $button-hover-color;
-//     }
-// }
