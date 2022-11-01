@@ -1,4 +1,5 @@
 .footer {
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   padding: 60px 0;
   background-image: url('../images/mobile/footer/footer320x619.png');
   background-size: cover;
@@ -18,8 +19,6 @@
     }
   }
   @include desktop {
-    padding: 100px 0;
-
     background-image: url('../images/desktop/footer/bg1211x266.png');
     @include retina {
       background-image: url('../images/desktop/footer/bg2422x532@2x.png');
