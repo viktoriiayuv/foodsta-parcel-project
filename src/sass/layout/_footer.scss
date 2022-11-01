@@ -8,6 +8,13 @@
   @include retina {
     background-image: url('../images/mobile/footer/footer640x1238@2x.png');
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url('../images/tablet/footer/bg768x506.png');
+    @include retina {
+      background-image: url('../images/tablet/footer/bg1570x1012@2x.png');
+    }
+  }
 }
 
 .logo--footer {
