@@ -8,6 +8,30 @@
   @include retina {
     background-image: url('../images/mobile/footer/footer640x1238@2x.png');
   }
+
+  @include tablet {
+    padding: 100px 0px;
+
+    background-image: url('../images/tablet/footer/bg768x506.png');
+    @include retina {
+      background-image: url('../images/tablet/footer/bg1570x1012@2x.png');
+    }
+  }
+  @include desktop {
+    padding: 100px 0;
+
+    background-image: url('../images/desktop/footer/bg1211x266.png');
+    @include retina {
+      background-image: url('../images/desktop/footer/bg2422x532@2x.png');
+    }
+  }
+}
+
+.footer__item {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .logo--footer {
@@ -22,7 +46,7 @@
   }
 
   @include tablet {
-    margin-bottom: 57px;
+    margin-bottom: 40px;
   }
 
   @include desktop {
@@ -36,11 +60,17 @@
     align-items: start;
     margin-right: 81px;
   }
+  @include tablet {
+    margin: 0 0 0 114px;
+  }
 }
 
 .nav-site__item.nav-site__item--footer {
   @media screen and (max-width: 767px) {
     margin: 0 0 20px 0;
+  }
+  @include tablet {
+    margin: 0 28px 0 0;
   }
 }
 .nav-site__link--footer {
@@ -57,13 +87,20 @@
 .subscribe-form {
   display: flex;
   flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .subscribe-form__input--footer {
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
+  @include tablet {
+    margin-right: 13px;
+  }
 }
+
 .subscribe-form__box {
   display: flex;
   justify-content: end;
@@ -72,21 +109,44 @@
 .subs-box__text {
   margin-top: 20px;
   @include fontSize(10px, 1.2);
+  @include tablet {
+    @include fontSize(12px, 1.17);
+    margin-top: 12px;
+    margin-bottom: 100px;
+  }
+  @include desktop {
+    margin: 12px 0 80px 0;
+  }
 }
 
 .subs-box__link {
   color: $secondary-green-accent;
 }
 
+.footer__item-add {
+  @include tablet {
+    display: flex;
+  }
+}
+
 .additional-nav {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  @include tablet {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+  }
 }
 
 .additional-nav__link {
   @include fontSize(10px, 1.2);
   color: $secondary-green-accent;
+  @include tablet {
+    @include fontSize(12px, 1.17);
+    margin-right: 20px;
+  }
 }
 
 .copyright {
@@ -94,4 +154,13 @@
   justify-content: center;
   margin-top: 40px;
   @include fontSize(10px, 1.2);
+  @include tablet {
+    display: flex;
+    justify-content: end;
+    margin: 0 0 0 216px;
+    @include fontSize(12px, 1.17);
+  }
+  @include desktop {
+    margin: 0 0 0 760px;
+  }
 }
