@@ -97,6 +97,7 @@
   }
   @include tablet {
     margin-right: 13px;
+    width: 279px;
   }
 }
 
@@ -125,6 +126,7 @@
 .footer__item-add {
   @include tablet {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -133,8 +135,6 @@
   justify-content: space-between;
   margin-top: 60px;
   @include tablet {
-    display: flex;
-    justify-content: start;
     margin: 0;
   }
 }
@@ -149,17 +149,11 @@
 }
 
 .copyright {
-  display: flex;
-  justify-content: center;
   margin-top: 40px;
   @include fontSize(10px, 1.2);
   @include tablet {
-    display: flex;
-    justify-content: end;
-    margin: 0 0 0 216px;
+    margin-top: 0;
+    margin-left: auto;
     @include fontSize(12px, 1.17);
-  }
-  @include desktop {
-    margin: 0 0 0 760px;
   }
 }

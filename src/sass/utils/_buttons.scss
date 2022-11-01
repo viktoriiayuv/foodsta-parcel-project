@@ -12,6 +12,7 @@
   border: none;
   width: 98px;
   height: 32px;
+  transition: background-color $transition-time $transition-timing-function;
 
   &:hover,
   &:focus,
@@ -25,6 +26,7 @@
   border: 2px solid $secondary-green-accent;
   width: 106px;
   height: 40px;
+  transition: border-color $transition-time $transition-timing-function;
 
   &:hover,
   &:focus,
@@ -37,6 +39,7 @@
   border: none;
   width: 103px;
   height: 42px;
+  transition: background-color $transition-time $transition-timing-function;
 
   &:hover,
   &:focus,
@@ -49,6 +52,7 @@
   border: 0.854167px solid $secondary-green-accent;
   width: 103px;
   height: 42px;
+  transition: background-color $transition-time $transition-timing-function;
 
   &:hover,
   &:focus,

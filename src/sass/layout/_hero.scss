@@ -94,6 +94,7 @@
     .slick-prev {
       left: -25px;
       background: url('../images/arrow/slick-prev_.svg');
+      transition: background $transition-time $transition-timing-function;
       &:hover {
         background: url('../images/arrow/slick-prev-hover.svg');
       }
@@ -101,6 +102,7 @@
     .slick-next {
       right: -25px;
       background: url('../images/arrow/slick-next_.svg');
+      transition: background $transition-time $transition-timing-function;
       &:hover {
         background: url('../images/arrow/slick-next-hover.svg');
       }

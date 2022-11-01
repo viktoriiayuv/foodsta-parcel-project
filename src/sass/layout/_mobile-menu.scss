@@ -1,15 +1,16 @@
 .close-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
   border: none;
   background: none;
   padding: 0;
   margin: 0;
   width: 24px;
   height: 24px;
-  position: absolute;
-  top: 4px;
-  right: 4px;
+  cursor: pointer;
   fill: $primary-text-color;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-time $transition-timing-function;
 }
 
 .close-btn__icon {
@@ -27,7 +28,7 @@
   background-color: $secondary-background-color;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-time $transition-timing-function;
   visibility: hidden;
   opacity: 0;
 }
@@ -47,6 +48,7 @@
   padding-left: 16px;
   padding-bottom: 16px;
   background-color: $secondary-background-color;
+  transition: background-color $transition-time $transition-timing-function;
 }
 
 .menu-mob__item:first-child {

@@ -26,7 +26,7 @@
 
 .nav-site__item {
   transform: scale(1);
-  transition: transform 400ms linear;
+  transition: transform $transition-time $transition-timing-function;
 }
 
 .nav-site__item:hover,
@@ -63,7 +63,7 @@
   padding: 28px 0;
   @include fontSize(14px, 1.14);
   color: $primary-text-color;
-  transition: color 400ms linear;
+  transition: color $transition-time $transition-timing-function;
 }
 
 .nav-site__link:hover,
@@ -87,6 +87,7 @@
   border: none;
   background: none;
   color: $secondary-green-accent;
+  transition: color $transition-time $transition-timing-function;
 
   &:hover,
   &:focus,
