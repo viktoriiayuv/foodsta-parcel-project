@@ -25,21 +25,14 @@
 }
 
 .nav-site__item {
-  transform: scale(1);
-  transition: transform $transition-time $transition-timing-function;
+  color: $primary-text-color;
+  transition: color $transition-time $transition-timing-function;
 }
 
 .nav-site__item:hover,
 .nav-site__item:focus,
 .nav-site__item:active {
   color: $primary-green-accent;
-  text-decoration-line: underline;
-}
-
-.nav-site__item--header:hover,
-.nav-site__item--header:focus,
-.nav-site__item--header:active {
-  transform: scale(1.35);
 }
 
 .nav-site__list {
