@@ -1,41 +1,54 @@
 <div class="backdrop is-hidden" data-modal>
-    <p class="form__title">Order Form</p>
   <div class="modal">
-    <button class="modal__button" type="button" data-modal-close>
-      <svg class="modal__icon">
+    <button class="close-modal__button" type="button" data-modal-close>
+      <svg class="close-modal__icon">
         <use href="/src/images/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
-    <form class="form" autocomplete="off">
-        <div class="main-wrapper">
-            <div class="wrapper">
-              <label class="label__title" for="name"
-                >Name
-                <input  class="form__input" placeholder="Your Name" type="text" name="name" id="name" required minlength="4" maxlength="30" />
-              </label>
-            </div>
-            <div class="wrapper">
-              <label class="label__title" for="phone"
-                >Phone number
-                <input  class="form__input" placeholder="Your Phone" type="tel" name="phone" id="phone" required minlength="4" maxlength="30" />
-              </label>
-            </div>
-            <div class="wrapper">
-              <label class="label__title" for="mail"
-                >E-mail
-                <input class="form__input" 
-                  placeholder="example@gmail.com"
-                  type="email"
-                  name="mail"
-                  id="mail"
-                  required
-                  minlength="8"
-                  maxlength="100"
-                />
-              </label>
-            </div>
-        </div>
-        <button class="form__button label__title" type="submit">Send</button>
-    </form>
+    <div class="modal__container">
+      <p class="form__title">Order Form</p>
+      <form class="form" autocomplete="off">
+        <label class="label__title" for="name"
+          >Name
+          <input
+            class="form__input"
+            placeholder="Your Name"
+            type="text"
+            name="name"
+            id="name"
+            required
+            minlength="3"
+            maxlength="25"
+          />
+        </label>
+        <label class="label__title" for="phone"
+          >Phone number
+          <input
+            class="form__input"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            type="tel"
+            name="phone"
+            id="phone"
+            required
+            minlength="4"
+            maxlength="30"
+          />
+        </label>
+        <label class="label__title" for="mail"
+          >E-mail
+          <input
+            class="form__input"
+            placeholder="example@gmail.com"
+            type="email"
+            name="mail"
+            id="mail"
+            required
+            minlength="8"
+            maxlength="100"
+          />
+        </label>
+        <button class="form__button" type="submit">Send</button>
+      </form>
+    </div>
   </div>
 </div>

@@ -9,98 +9,109 @@
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal {
-  position: relative;
-  min-width: 320px;
-  max-width: 458px;
+  position: absolute;
+  width: 320px;
   height: 449px;
-  width: 100%;
-  background-color: #ffe550;
-  margin-top: 60px;
+
+  background-color: $primary-yellow-accent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
-  padding: 32px 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  @media screen and(min-width:768px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  @include tablet {
+    width: 458px;
   }
 
-  &__icon {
-    width: 32px;
-    height: 32px;
-  }
+  &__container {
+    padding: 32px 20px;
 
-  &__button {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // display: block;
-    border: none;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
+    @include tablet {
+      padding: 32px 32px;
+    }
   }
 }
+
 // FORM
 .form__title {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.21;
-  color: #2c2c2c;
+  @include fontSize(24px, 1.2);
+
+  color: $primary-text-color;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.close-modal__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.close-modal__button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  //   flex-wrap: wrap;
-  width: calc(100% / 2);
-  margin-left: auto;
-  margin-right: auto;
 
   &__input {
     width: 280px;
     height: 48px;
-    background: #ffffff;
-    border: 1px solid #7eb101;
+    background: $white-color;
+    border: 1px solid $secondary-green-accent;
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
+    margin-top: 2px;
+
+    padding: 14px 0 14px 12px;
+    font-weight: 400;
+    @include fontSize(16px, 1.25);
+
+    @include tablet {
+      width: 394px;
+    }
   }
 
   &__button {
     display: inline-block;
-    background: #ffffff;
-    border: 2px solid #7eb101;
+    background: $white-color;
+    border: 2px solid $secondary-green-accent;
     border-radius: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 106px;
     height: 40px;
-  }
-}
+    margin-top: 8px;
 
-.wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  margin-bottom: 24px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $primary-green-accent;
+    }
+  }
 }
 
 .label__title {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.38;
-  color: #2c2c2c;
+  @include fontSize(16px, 1.4);
+  color: $primary-text-color;
+  margin-bottom: 24px;
 }
