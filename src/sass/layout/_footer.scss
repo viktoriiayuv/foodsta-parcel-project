@@ -4,7 +4,7 @@
   background-image: url('../images/mobile/footer/footer320x619.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
 
   @include retina {
     background-image: url('../images/mobile/footer/footer640x1238@2x.png');
