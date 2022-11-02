@@ -89,6 +89,7 @@
   @include fontSize(14px, 1.14);
 
   @include tablet {
+    max-width: 500px;
     margin-top: 20px;
     margin-bottom: 40px;
     @include fontSize(16px, 1.19);
