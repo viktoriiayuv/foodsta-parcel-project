@@ -10,8 +10,7 @@
 .button--order-green {
   background-color: $primary-green-accent;
   border: none;
-  width: 98px;
-  height: 32px;
+  padding: 6px 18px;
   transition: background-color $transition-time $transition-timing-function;
 
   &:hover,
