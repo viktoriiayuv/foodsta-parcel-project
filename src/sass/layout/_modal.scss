@@ -75,6 +75,7 @@
   flex-direction: column;
 
   &__input {
+    outline: transparent;
     width: 280px;
     height: 48px;
     background: $white-color;
@@ -90,6 +91,14 @@
     @include tablet {
       width: 394px;
     }
+
+    &:not(:placeholder-shown):valid {
+      border-color: $secondary-green-accent;
+    }
+
+    &:not(:placeholder-shown):invalid {
+      border-color: $error-color;
+    }
   }
 
   &__button {
@@ -102,6 +111,7 @@
     width: 106px;
     height: 40px;
     margin-top: 8px;
+    transition: background-color $transition-time $transition-timing-function;
 
     &:hover,
     &:focus,
