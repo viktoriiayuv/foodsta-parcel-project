@@ -182,3 +182,23 @@
   position: absolute;
   transform: translate(3px, 2px);
 }
+
+.offerings__item--deliv::before {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/icon-deliv.svg);
+}
+
+.offerings__item--order::before {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/icon-order.svg);
+}
