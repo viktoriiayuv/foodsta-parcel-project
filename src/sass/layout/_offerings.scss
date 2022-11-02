@@ -169,7 +169,7 @@
   padding: 0;
   @include fontSize(13px, 1.5);
   cursor: pointer;
-  color: #000000;
+  color: $black-color;
   border: none;
   background-color: inherit;
 
