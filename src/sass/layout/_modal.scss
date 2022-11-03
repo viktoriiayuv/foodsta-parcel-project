@@ -43,7 +43,7 @@
 }
 
 // FORM
-.form__title {
+.modal__title {
   font-weight: 700;
   @include fontSize(24px, 1.2);
 
@@ -52,7 +52,7 @@
   margin-bottom: 20px;
 }
 
-.close-modal__icon {
+.close-modal-btn__icon {
   width: 32px;
   height: 32px;
   align-items: center;
@@ -60,7 +60,7 @@
   border-radius: 50%;
 }
 
-.close-modal__button {
+.close-modal-btn {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -121,7 +121,7 @@
   }
 }
 
-.label__title {
+.form__title {
   font-weight: 500;
   @include fontSize(16px, 1.4);
   color: $primary-text-color;
