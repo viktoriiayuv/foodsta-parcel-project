@@ -11,6 +11,14 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  transition: transform $transition-time $transition-timing-function,
+    visibility $transition-time $transition-timing-function, opacity $transition-time $transition-timing-function;
+}
+
+.is-hidden .modal {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .no-scroll {
@@ -28,6 +36,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  opacity: 1;
+  visibility: visible;
+  transition: transform $transition-time $transition-timing-function,
+    visibility $transition-time $transition-timing-function, opacity $transition-time $transition-timing-function;
 
   @include tablet {
     width: 458px;
