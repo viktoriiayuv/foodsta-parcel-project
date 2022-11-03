@@ -9,8 +9,8 @@
             <source
               media="(max-width:767.99px)"
               srcset="
-                ./images/mobile/favorites/gamburger224x224.png    1x,
-                ./images/mobile/favorites/gamburger448x448@2x.png 2x
+                ./images/mobile/favorites/gamburger224x224.png    224w,
+                ./images/mobile/favorites/gamburger448x448@2x.png 448w
               "
               sizes="224px"
             />
@@ -18,8 +18,8 @@
             <source
               media="(max-width:1279px )"
               srcset="
-                ./images/tablet/favorites/gamburger268x270.png    1x,
-                ./images/tablet/favorites/gamburger536x538@2x.png 2x
+                ./images/tablet/favorites/gamburger268x270.png    268w,
+                ./images/tablet/favorites/gamburger536x538@2x.png 536w
               "
               sizes="268px"
             />
@@ -27,15 +27,15 @@
             <source
               media="(min-width:1280px)"
               srcset="
-                ./images/desktop/favorites/gamburger315x315.png    1x,
-                ./images/desktop/favorites/gamburger630x630@2x.png 2x
+                ./images/desktop/favorites/gamburger315x315.png    315w,
+                ./images/desktop/favorites/gamburger630x630@2x.png 630w
               "
               sizes="315px"
             />
             <img
               src="./images/desktop/favorites/gamburger315x315.png"
               alt="hamburger"
-              srcset="./images/desktop/favorites/gamburger630x630@2x.png 2x"
+              srcset="./images/desktop/favorites/gamburger630x630@2x.png 630w"
               sizes="315px"
             />
           </picture>
@@ -46,25 +46,28 @@
           <picture>
             <source
               media="(max-width:767.99px)"
-              srcset="./images/mobile/favorites/pasta224x224.png 1x, ./images/mobile/favorites/pasta448x448@2x.png 2x"
+              srcset="
+                ./images/mobile/favorites/pasta224x224.png    224w,
+                ./images/mobile/favorites/pasta448x448@2x.png 448w
+              "
               sizes="224px"
             />
 
-            <source
-              media="(max-width:1279px )"
-              srcset="./images/tablet/favorites/pasta268x270.png 1x, ./images/tablet/favorites/pasta536x538@2x.png 2x"
-              sizes="268px"
-            />
+            <source media="(max-width:1279px )" srcset="./images/tablet/favorites/pasta268x270.png 268w,
+            ./images/tablet/favorites/pasta536x538@2x.png 536w sizes="268px" />
 
             <source
               media="(min-width:1280px)"
-              srcset="./images/desktop/favorites/pasta315x315.png 1x, ./images/desktop/favorites/pasta630x630@2x.png 2x"
+              srcset="
+                ./images/desktop/favorites/pasta315x315.png    315w,
+                ./images/desktop/favorites/pasta630x630@2x.png 630w
+              "
               sizes="315px"
             />
             <img
               src="./images/desktop/favorites/pasta315x315.png"
               alt="pasta"
-              srcset="./images/desktop/favorites/pasta630x630@2x.png 2x"
+              srcset="./images/desktop/favorites/pasta630x630@2x.png 315w"
               sizes="315px"
             />
           </picture>
@@ -75,38 +78,18 @@
           <picture>
             <source
               media="(max-width:767.99px)"
-              srcset="./images/mobile/favorites/pizza224x224.png 1x, ./images/mobile/favorites/pizza448x448@2x.png 2x"
+              srcset="
+                ./images/mobile/favorites/pizza224x224.png    224w,
+                ./images/mobile/favorites/pizza448x448@2x.png 448w
+              "
               sizes="224px"
             />
 
             <source
               media="(max-width:1279px )"
-              srcset="./images/tablet/favorites/pizza268x270.png 1x, ./images/tablet/favorites/pizza536x538@2x.png 2x"
-              sizes="268px"
-            />
-
-            <source
-              media="(min-width:1280px)"
-              srcset="./images/desktop/favorites/pizza315x315.png 1x, ./images/desktop/favorites/pizza630x630@2x.png 2x"
-              sizes="315px"
-            />
-            <img
-              src="./images/desktop/favorites/pizza315x315.png"
-              alt="pizza"
-              srcset="./images/desktop/favorites/pizza630x630@2x.png 2x"
-              sizes="315px"
-            />
-          </picture>
-        </a>
-      </li>
-      <li class="favorites__item">
-        <a class="favorites__link" href="#">
-          <picture>
-            <source
-              media="(max-width:1279px )"
               srcset="
-                ./images/tablet/favorites/chicken268x270.png    1x,
-                ./images/tablet/favorites/chicken536x538@2x.png 2x
+                ./images/tablet/favorites/pizza268x270.png    268w,
+                ./images/tablet/favorites/pizza536x538@2x.png 536w
               "
               sizes="268px"
             />
@@ -114,52 +97,58 @@
             <source
               media="(min-width:1280px)"
               srcset="
-                ./images/desktop/favorites/chicken315x315.png    1x,
-                ./images/desktop/favorites/chicken630x630@2x.png 2x
+                ./images/desktop/favorites/pizza315x315.png    315w,
+                ./images/desktop/favorites/pizza630x630@2x.png 630w
+              "
+              sizes="315px"
+            />
+            <img
+              src="./images/desktop/favorites/pizza315x315.png"
+              alt="pizza"
+              srcset="./images/desktop/favorites/pizza630x630@2x.png 630w"
+              sizes="315px"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="favorites__item">
+        <a class="favorites__link" href="#">
+          <picture>
+            <source
+              media="(max-width:1279px )"
+              srcset="
+                ./images/tablet/favorites/chicken268x270.png    268w,
+                ./images/tablet/favorites/chicken536x538@2x.png 536w
+              "
+              sizes="268px"
+            />
+
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/desktop/favorites/chicken315x315.png    315w,
+                ./images/desktop/favorites/chicken630x630@2x.png 630w
               "
               sizes="315px"
             />
             <img
               src="./images/desktop/favorites/chicken315x315.png"
               alt="chicken"
-              srcset="./images/desktop/favorites/chicken630x630@2x.png 2x"
+              srcset="./images/desktop/favorites/chicken630x630@2x.png 630w"
               sizes="315px"
             />
           </picture>
         </a>
       </li>
 
-      <li class="favorites__item">
-        <a class="favorites__link" href="#">
-          <picture>
-            <source
-              media="(max-width:1279px )"
-              srcset="./images/tablet/favorites/salat268x270.png 1x, ./images/tablet/favorites/salat536x538@2x.png 2x"
-              sizes="268px"
-            />
-
-            <source
-              media="(min-width:1280px)"
-              srcset="./images/desktop/favorites/salat315x315.png 1x, ./images/desktop/favorites/salat630x630@2x.png 2x"
-              sizes="315px"
-            />
-            <img
-              src="./images/desktop/favorites/salat315x315.png"
-              alt="salat"
-              srcset="./images/desktop/favorites/salat630x630@2x.png 2x"
-              sizes="315px"
-            />
-          </picture>
-        </a>
-      </li>
       <li class="favorites__item">
         <a class="favorites__link" href="#">
           <picture>
             <source
               media="(max-width:1279px )"
               srcset="
-                ./images/tablet/favorites/borshch268x270.png    1x,
-                ./images/tablet/favorites/borshch536x538@2x.png 2x
+                ./images/tablet/favorites/salat268x270.png    268w,
+                ./images/tablet/favorites/salat536x538@2x.png 536w
               "
               sizes="268px"
             />
@@ -167,15 +156,44 @@
             <source
               media="(min-width:1280px)"
               srcset="
-                ./images/desktop/favorites/borshch315x315.png    1x,
-                ./images/desktop/favorites/borshch630x630@2x.png 2x
+                ./images/desktop/favorites/salat315x315.png    315w,
+                ./images/desktop/favorites/salat630x630@2x.png 630w
+              "
+              sizes="315px"
+            />
+            <img
+              src="./images/desktop/favorites/salat315x315.png"
+              alt="salat"
+              srcset="./images/desktop/favorites/salat630x630@2x.png 630w"
+              sizes="315px"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="favorites__item">
+        <a class="favorites__link" href="#">
+          <picture>
+            <source
+              media="(max-width:1279px )"
+              srcset="
+                ./images/tablet/favorites/borshch268x270.png    268w,
+                ./images/tablet/favorites/borshch536x538@2x.png 536w
+              "
+              sizes="268px"
+            />
+
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/desktop/favorites/borshch315x315.png    315w,
+                ./images/desktop/favorites/borshch630x630@2x.png 630w
               "
               sizes="315px"
             />
             <img
               src="./images/desktop/favorites/borshch315x315.png"
               alt="borshch"
-              srcset="./images/desktop/favorites/borshch630x630@2x.png 2x"
+              srcset="./images/desktop/favorites/borshch630x630@2x.png 630w"
               sizes="315px"
             />
           </picture>
