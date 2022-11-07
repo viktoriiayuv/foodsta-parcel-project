@@ -74,7 +74,7 @@
 .customers__item {
   border-radius: 0px 30px 30px 30px;
   padding: 8px;
-  background-color: $secondary-background-color;
+  background-color: $primary-background-color;
 
   @include tablet {
     max-width: 336px;
